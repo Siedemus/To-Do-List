@@ -1,6 +1,6 @@
 # To Do List
 
-![bg](images/background.png)
+![bg](images/bg.png)
 
 ## About project
 My project is application allows you to add new tasks to list, set them as done and delete each of them.
