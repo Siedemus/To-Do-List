@@ -15,3 +15,7 @@ My project is application allows you to add new tasks to list, set them as done 
 -   JavaScript
 -   BEM
 -   Normalise.css
+
+## Lighthouse
+
+![ss](images/lighthouse.jpg)
