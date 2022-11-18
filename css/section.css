@@ -1,0 +1,7 @@
+.container {
+    padding: 15px;
+    font-size: 25px;
+    font-weight: 700;
+    border-bottom: 2px solid rgb(214, 214, 214);
+    background-color: white;
+}
