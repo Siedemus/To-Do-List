@@ -1,8 +1,8 @@
 {
     const tasks = [
         {
-            content: "Wypić wodę",
-            done: true,
+            content: "Dodać zadanie",
+            done: false,
         },
     ];
 
