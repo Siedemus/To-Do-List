@@ -55,14 +55,30 @@
         document.querySelector(".js-list").innerHTML = htmlString
         bindEvents();
     };
+    
+    const focusInput = () => {
+        const form = document.querySelector(".js-form");
+        form.addEventListener("submit", () => {
+            const input = document.querySelector(".js-input")
+            input.focus();
+        })
+    }
+
+    const clearInput = () => {
+        const form = document.querySelector(".js-form");
+        form.reset();
+    }
 
     const submitForm = (event) => {
         event.preventDefault();
 
         let input = document.querySelector(".js-input").value.trim()
         if (input === "") {
+            clearInput();
+            focusInput();
             return;
         };
+        clearInput();
         addNewTask(input);
     };
 
