@@ -29,6 +29,5 @@
 .form__input {
     padding: 10px;
     border: 1px solid rgb(214, 214, 214);
-    flex-grow: 1
-    ;
+    flex-grow: 1;
 }

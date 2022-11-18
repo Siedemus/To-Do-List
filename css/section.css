@@ -1,4 +1,4 @@
-.section{
+.section {
     margin: auto 10px;
 }
 
@@ -12,6 +12,6 @@
 }
 
 .section__header--list {
-    border-top: 10px solid rgb(214, 214, 214);   
+    border-top: 10px solid rgb(214, 214, 214);
     font-size: 23px;
 }
