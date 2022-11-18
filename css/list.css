@@ -1,0 +1,39 @@
+.list {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+}
+
+.list__item{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    border-bottom: 2px solid rgb(214, 214, 214);
+}
+
+.list__text--done {
+    text-decoration: line-through;
+}
+
+.list__remove {
+    align-self: center;
+    height: 33px;
+    margin: 10px;
+    padding: 10px;
+    font-weight: 800;
+    background-color: crimson;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+.list__done {
+    margin: 10px;
+    padding: 10px;
+    width: 33px;
+    height: 33px;
+    font-weight: 800;
+    background-color: teal;
+    border: none;
+    color: rgb(255, 255, 255);
+    align-self: center;
+}
