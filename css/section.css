@@ -1,4 +1,8 @@
-.container {
+.section{
+    margin: auto 10px;
+}
+
+.section__container {
     padding: 15px;
     font-size: 25px;
     font-weight: 700;
