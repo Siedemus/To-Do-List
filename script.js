@@ -1,7 +1,7 @@
 {
     let tasks = [
     ];
-
+    let hideDoneTasks = false;
 
     const addNewTask = (newTask) => {
         tasks = [
@@ -11,19 +11,38 @@
         render();
     };
 
-
     const removeTask = (index) => {
         tasks = [
             ...tasks.slice(0, index),
-            ...tasks.slice(index +1)
+            ...tasks.slice(index +1),
         ];
         render()
     };
 
     const toggleTaskDone = (index) => {
-        tasks[index].done = !tasks[index].done;
+        tasks = [
+            ...tasks.slice(0, index),
+            {
+                ...tasks[index],
+                done: !tasks[index].done,
+            },
+            ...tasks.slice(index +1),
+        ];
         render();
     };
+
+    const markAllTaskDone = () => {
+        tasks = tasks.map((task) => ({
+            ...task,
+            done: true
+        }));
+        render();
+    };
+
+    const toggleHideDoneTasks = () => {
+        hideDoneTasks = !hideDoneTasks
+        render();
+    }
 
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove")
