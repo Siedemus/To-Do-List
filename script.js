@@ -91,11 +91,25 @@
         `
     };
 
+    const bindButtonsEvents = () => {
+        const markAllDoneButton = document.querySelector(".js-markAllDone");
+
+        if(markAllDoneButton) {
+            markAllDoneButton.addEventListener("click", markAllTaskDone);
+        }
+
+        const toggleHideDoneTasksButton = document.querySelector(".js-ToggleHideDoneTasks")
+
+        if (toggleHideDoneTasksButton) {
+            toggleHideDoneTasksButton.addEventListener("click", toggleHideDoneTasks);
+        };
+    };
+
     const render = () => {
         renderTasks();
-        renderButtons()
-
+        renderButtons();
         bindEvents();
+        bindButtonsEvents();
     };
 
     const focusInput = () => {
