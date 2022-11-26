@@ -25,3 +25,7 @@
 .container__button:active {
     color: rgb(0, 78, 78);
 }
+
+.container__button:disabled {
+    color: rgba(125, 125, 125, 0.389);
+}
