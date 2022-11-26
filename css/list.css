@@ -48,3 +48,6 @@
     background-color: rgb(255, 0, 51);
 }
 
+.list__item--hidden {
+    display: none;
+}
