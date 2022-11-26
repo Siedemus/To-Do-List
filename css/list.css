@@ -45,3 +45,7 @@
 .list__remove:hover {
     background-color: rgb(157, 15, 43);
 }
+
+.list__item--hidden {
+    display: none;
+};
