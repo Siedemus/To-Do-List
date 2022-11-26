@@ -11,7 +11,7 @@
 
 .container__button {
     border: none;
-    background-color: white;
+    background-color: transparent;
     padding: 15px;
     color: teal;
     font-size: 18px;
