@@ -1,23 +1,23 @@
 {
-    const tasks = [
-        {
-            content: "Dodać zadanie",
-            done: false,
-        },
+    let tasks = [
     ];
 
 
     const addNewTask = (newTask) => {
-        tasks.push({
-            content: newTask
-        });
+        tasks = [
+            {content: newTask},
+            ...tasks,
+        ];
         render();
     };
 
 
     const removeTask = (index) => {
-        tasks.splice(index, 1)
-        render();
+        tasks = [
+            ...tasks.slice(0, index),
+            ...tasks.slice(index +1)
+        ];
+        render()
     };
 
     const toggleTaskDone = (index) => {
