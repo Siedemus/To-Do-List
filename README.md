@@ -7,7 +7,7 @@ My project is application allows you to add new tasks to list, set them as done 
 
 **Demo:** [To Do List](https://siedemus.github.io/To-Do-List/)
 
-![animation](images/Animation.gif)
+![animation](images/NewAnimation.gif)
 
 ## Technologies I used
 -   HTML
