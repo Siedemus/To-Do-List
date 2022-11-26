@@ -1,2 +1,28 @@
 .container__buttons {
+    align-self: center;
 }
+
+@media (max-width: 767px) {
+    .container__buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.container__button {
+    border: none;
+    background-color: white;
+    padding: 15px;
+    color: teal;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.container__button:hover {
+    color: rgb(0, 177, 177);
+}
+
+.container__button:active {
+    color: rgb(0, 78, 78);
+}
+

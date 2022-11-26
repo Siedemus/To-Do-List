@@ -6,12 +6,26 @@
     padding: 25px;
     font-size: 25px;
     font-weight: 700;
-    border-bottom: 2px solid rgb(214, 214, 214);
     background-color: white;
+    border-bottom: 2px solid rgb(214, 214, 214);
     margin: 0;
 }
 
-.section__header--list {
-    border-top: 10px solid rgb(214, 214, 214);
+.section__header--list.section__header--list {
     font-size: 23px;
+    border-bottom: none;
+}
+
+.section__container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: white;
+    border-top: 10px solid rgb(214, 214, 214);
+    border-bottom: 2px solid rgb(214, 214, 214);
+}
+
+@media (max-width: 767px) {
+    .section__container {
+        grid-template-columns: 1fr;
+    };
 }
