@@ -5,7 +5,7 @@
 
     const addNewTask = (newTask) => {
         tasks = [
-            {content: newTask},
+            { content: newTask },
             ...tasks,
         ];
         render();
@@ -14,7 +14,7 @@
     const removeTask = (index) => {
         tasks = [
             ...tasks.slice(0, index),
-            ...tasks.slice(index +1),
+            ...tasks.slice(index + 1),
         ];
         render()
     };
@@ -26,7 +26,7 @@
                 ...tasks[index],
                 done: !tasks[index].done,
             },
-            ...tasks.slice(index +1),
+            ...tasks.slice(index + 1),
         ];
         render();
     };
@@ -68,8 +68,8 @@
       </li>
      `
 
-     const listElement = document.querySelector(".js-list")
-     listElement.innerHTML = tasks.map(taskHTML).join("");
+        const listElement = document.querySelector(".js-list")
+        listElement.innerHTML = tasks.map(taskHTML).join("");
     };
 
     const renderButtons = () => {
@@ -85,7 +85,7 @@
             ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
             </button>
             <button class="container__button js-markAllDone"
-            ${tasks.every(({done}) => done) ? " disabled" : ""}>
+            ${tasks.every(({ done }) => done) ? " disabled" : ""}>
             Ukończ wszystkie
             </button>
         `
@@ -94,7 +94,7 @@
     const bindButtonsEvents = () => {
         const markAllDoneButton = document.querySelector(".js-markAllDone");
 
-        if(markAllDoneButton) {
+        if (markAllDoneButton) {
             markAllDoneButton.addEventListener("click", markAllTaskDone);
         }
 
