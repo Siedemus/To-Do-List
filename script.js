@@ -16,7 +16,7 @@
             ...tasks.slice(0, index),
             ...tasks.slice(index + 1),
         ];
-        render()
+        render();
     };
 
     const toggleTaskDone = (index) => {
@@ -40,18 +40,18 @@
     };
 
     const toggleHideDoneTasks = () => {
-        hideDoneTasks = !hideDoneTasks
+        hideDoneTasks = !hideDoneTasks;
         render();
     }
 
     const bindEvents = () => {
-        const removeButtons = document.querySelectorAll(".js-remove")
+        const removeButtons = document.querySelectorAll(".js-remove");
         removeButtons.forEach((removeButton, index) => {
             removeButton.addEventListener("click", () => {
                 removeTask(index);
             });
         });
-        const doneButtons = document.querySelectorAll(".js-done")
+        const doneButtons = document.querySelectorAll(".js-done");
         doneButtons.forEach((doneButton, index) => {
             doneButton.addEventListener("click", () => {
                 toggleTaskDone(index);
@@ -68,7 +68,7 @@
       </li>
      `
 
-        const listElement = document.querySelector(".js-list")
+        const listElement = document.querySelector(".js-list");
         listElement.innerHTML = tasks.map(taskHTML).join("");
     };
 
@@ -96,9 +96,9 @@
 
         if (markAllDoneButton) {
             markAllDoneButton.addEventListener("click", markAllTaskDone);
-        }
+        };
 
-        const toggleHideDoneTasksButton = document.querySelector(".js-ToggleHideDoneTasks")
+        const toggleHideDoneTasksButton = document.querySelector(".js-ToggleHideDoneTasks");
 
         if (toggleHideDoneTasksButton) {
             toggleHideDoneTasksButton.addEventListener("click", toggleHideDoneTasks);
@@ -115,7 +115,7 @@
     const focusInput = () => {
         const form = document.querySelector(".js-form");
         form.addEventListener("submit", () => {
-            const input = document.querySelector(".js-input")
+            const input = document.querySelector(".js-input");
             input.focus();
         });
     };
@@ -128,7 +128,7 @@
     const submitForm = (event) => {
         event.preventDefault();
 
-        let input = document.querySelector(".js-input").value.trim()
+        let input = document.querySelector(".js-input").value.trim();
         if (input === "") {
             clearInput();
             focusInput();
